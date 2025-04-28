@@ -149,8 +149,8 @@
     <!-- About End -->
 
     <!-- Product Start -->
-    <section id="product">
-      <div class="container-fluid pt-5">
+    <section id="product" class="pt-5">
+      <div class="container-fluid">
         <div class="container position-relative">
           <div class="text-center pb-2 pt-5">
             <p class="section-title px-5">
@@ -160,6 +160,7 @@
           </div>
     
           <!-- Carousel Start -->
+          <div style="display: flex; align-items: center; min-height: 55vh;"> 
           <div id="product-carousel" class="owl-carousel">
             <!-- Product 1 -->
             <div class="product-item position-relative overflow-hidden">
@@ -211,12 +212,13 @@
           <!-- Carousel End -->
     
           <!-- Custom Nav Buttons -->
-          <button id="prevProduct" type="button" class="custom-nav-btn position-absolute" style="top: 50%; left: -40px; transform: translateY(120%); background-color: rgba(255, 255, 255, 0.5); color: white; padding: 10px; border: none; border-radius: 50%; z-index: 1;">
+          <button id="prevProduct" type="button" class="custom-nav-btn position-absolute" style="top: 50%; left: -25px; transform: translateY(145%) translateX(-50%)">
             <i class="fas fa-chevron-left"></i>
           </button>
-          <button id="nextProduct" type="button" class="custom-nav-btn position-absolute" style="top: 50%; right: -40px; transform: translateY(120%); background-color: rgba(255, 255, 255, 0.5); color: white; padding: 10px; border: none; border-radius: 50%; z-index: 1;">
+          <button id="nextProduct" type="button" class="custom-nav-btn position-absolute" style="top: 50%; right: -25px; transform: translateY(145%) translateX(50%)">
             <i class="fas fa-chevron-right"></i>
           </button>
+        </div>
         </div>
       </div>
     </section>

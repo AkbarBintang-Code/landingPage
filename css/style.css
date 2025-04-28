@@ -657,9 +657,16 @@ img {
   transition: all 0.3s ease;
   z-index: 1000;
 }
+
 .custom-nav-btn:hover {
   background-color: #007bff;
   color: #fff;
+}
+
+#product {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .product-nav-btn {
