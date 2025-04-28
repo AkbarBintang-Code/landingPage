@@ -700,6 +700,43 @@ img {
   background-color: rgba(200, 200, 200, 0.9); /* Hover abu muda */
 }
 
+.product-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%); /* Gambar jadi lebih gelap saat hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Layer semi-transparan */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h5,
+.overlay p {
+  margin: 0;
+}
+
 /* Optional: transition saat hover */
 .btn-light:hover, .btn-dark:hover {
   opacity: 0.9;
