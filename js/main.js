@@ -153,3 +153,27 @@ $(document).ready(function() {
   });
 });
 
+const sr = ScrollReveal({
+  distance: '80px',
+  duration: 2500,
+  delay: 200,
+  reset: true,
+});
+
+sr.reveal('#home .col-md-6:first-child', { origin: 'left' });
+sr.reveal('#home .col-md-6:last-child', { origin: 'right' });
+sr.reveal('#about .col-lg-5 img', { origin: 'left' });
+sr.reveal('#about .col-lg-7:last-child', { origin: 'right' });
+sr.reveal('#product .section-title', { origin: 'right' });
+sr.reveal('#product h1', { origin: 'right' });
+sr.reveal('#product-carousel', { origin: 'right' });
+sr.reveal('#article .section-title', { origin: 'left' });
+sr.reveal('#article h1', { origin: 'left' });
+sr.reveal('#article-carousel', { origin: 'left' });
+sr.reveal('#testimonial .section-title', { origin: 'right' });
+sr.reveal('#testimonial h1', { origin: 'right' });
+sr.reveal('.testimonial-carousel', { origin: 'right' });
+
+ 
+
+
